@@ -9,6 +9,7 @@ import {
   Menu,
   MenuButton,
   MenuItem,
+  Select,
   Switch,
   Text,
 } from '@sanity/ui'
@@ -18,7 +19,7 @@ import {useApp} from '../../hooks'
 import {Search} from './search'
 
 export function Navbar() {
-  const {setThemeMode, themeMode} = useApp()
+  const {scheme, setScheme, setTheme, theme, themes} = useApp()
   const {handleLinkClick} = useLocation()
 
   return (
@@ -50,21 +51,18 @@ export function Navbar() {
                 }
               />
             </Box>
-            <Box>
+            <Box paddingX={2}>
               <Search />
             </Box>
-            <Box paddingX={4} paddingY={2}>
+            <Box paddingX={3} paddingY={2}>
               <Flex align="center">
                 <Text>
                   <Icon symbol="sun" />
                 </Text>
-                <Box paddingX={3}>
+                <Box paddingX={3} style={{lineHeight: 0}}>
                   <Switch
-                    checked={themeMode === 'dark'}
-                    onChange={(event) =>
-                      setThemeMode(event.currentTarget.checked ? 'dark' : 'light')
-                    }
-                    style={{verticalAlign: 'top'}}
+                    checked={scheme === 'dark'}
+                    onChange={(event) => setScheme(event.currentTarget.checked ? 'dark' : 'light')}
                   />
                 </Box>
                 <Text>
@@ -72,7 +70,16 @@ export function Navbar() {
                 </Text>
               </Flex>
             </Box>
-            <Box>
+            <Box paddingX={2}>
+              <Select onChange={(evt) => setTheme(evt.currentTarget.value)} value={theme}>
+                {themes.map((t) => (
+                  <option key={t.name} value={t.name}>
+                    {t.name}
+                  </option>
+                ))}
+              </Select>
+            </Box>
+            <Box paddingLeft={2}>
               <MenuButton
                 button={<Avatar as="button" color="magenta" size={1} />}
                 id="user-menu"

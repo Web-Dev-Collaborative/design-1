@@ -20,7 +20,7 @@ const Root = styled.span(switchBaseStyles)
 const Input = styled.input(switchInputStyles)
 const Representation = styled.span(switchRepresentationStyles)
 const Track = styled.span(switchTrackStyles)
-const Thumb = styled.span<{$checked?: boolean; $indeterminate?: boolean}>(switchThumbStyles)
+const Thumb = styled.span<{$indeterminate?: boolean}>(switchThumbStyles)
 
 /**
  * @public
@@ -51,7 +51,7 @@ export const Switch = forwardRef(function Switch(
       />
       <Representation aria-hidden data-name="representation">
         <Track />
-        <Thumb $checked={checked} $indeterminate={indeterminate} />
+        <Thumb $indeterminate={indeterminate} />
       </Representation>
     </Root>
   )

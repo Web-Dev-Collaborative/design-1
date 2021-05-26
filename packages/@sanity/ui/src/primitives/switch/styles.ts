@@ -117,12 +117,15 @@ export function switchTrackStyles(props: ThemeProps): FlattenSimpleInterpolation
     width: ${rem(input.switch.width)};
     height: ${rem(input.switch.height)};
     border-radius: ${rem(input.switch.height / 2)};
+    transition-property: background-color;
+    transition-duration: ${input.switch.transitionDurationMs}ms;
+    transition-timing-function: ${input.switch.transitionTimingFunction};
   `
 }
 
 /* Thumb */
 export function switchThumbStyles(
-  props: {$checked?: boolean; $indeterminate?: boolean} & ThemeProps
+  props: {$indeterminate?: boolean} & ThemeProps
 ): FlattenSimpleInterpolation {
   const {$indeterminate, theme} = props
   const {input} = theme.sanity
@@ -132,7 +135,6 @@ export function switchThumbStyles(
   const size = trackHeight - input.switch.padding * 2
   const checkedOffset = trackWidth - trackPadding * 2 - size
   const indeterminateOffset = trackWidth / 2 - size / 2 - trackPadding
-  const checked = $indeterminate !== true && props.$checked === true
 
   return css`
     &:not([hidden]) {
@@ -147,13 +149,12 @@ export function switchThumbStyles(
     transition-property: transform;
     transition-duration: ${input.switch.transitionDurationMs}ms;
     transition-timing-function: ${input.switch.transitionTimingFunction};
-    background: var(--switch-fg-color);
+    background-color: var(--switch-fg-color);
     transform: translate3d(0, 0, 0);
 
-    ${checked &&
-    css`
+    input:checked + span > & {
       transform: translate3d(${checkedOffset}px, 0, 0);
-    `}
+    }
 
     ${$indeterminate &&
     css`

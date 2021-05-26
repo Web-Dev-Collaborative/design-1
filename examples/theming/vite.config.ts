@@ -12,10 +12,6 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '$themes',
-        replacement: path.resolve(ROOT_PATH, 'examples/theming/src/themes'),
-      },
-      {
         find: '@sanity/color',
         replacement: path.resolve(ROOT_PATH, 'packages/@sanity/color/src'),
       },
@@ -47,6 +43,6 @@ export default defineConfig({
   },
   root: path.resolve(__dirname, 'src'),
   server: {
-    port: 3002,
+    port: 3004,
   },
 })

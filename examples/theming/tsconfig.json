@@ -1,17 +1,14 @@
 {
   "extends": "../../tsconfig",
-  "include": ["./src", "./typings", "./vite.config.ts"],
+  "include": ["./src", "typings", "./vite.config.ts"],
   "compilerOptions": {
+    "rootDir": "../../",
     "outDir": "./build/dts/",
     "module": "es6",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "$themes": ["../theming/src/themes"]
-    }
+    "sourceMap": true
   },
   "references": [
     {"path": "../../packages/@sanity/color/tsconfig.lib.json"},
