@@ -6,6 +6,7 @@ const ROOT_PATH = path.resolve(__dirname, '../..')
 
 module.exports = {
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  reactStrictMode: true,
 
   webpack: (config) => {
     // Add monorepo sibling packages to includes
@@ -23,6 +24,8 @@ module.exports = {
       '@sanity/logos': path.join(ROOT_PATH, 'packages/@sanity/logos/src'),
       '@sanity/ui': path.resolve(ROOT_PATH, 'packages/@sanity/ui/src'),
 
+      'react/jsx-dev-runtime': require.resolve('react/jsx-dev-runtime'),
+      'react/jsx-runtime': require.resolve('react/jsx-runtime'),
       react: require.resolve('react'),
       'react-dom': require.resolve('react-dom'),
       'styled-components': require.resolve('styled-components'),

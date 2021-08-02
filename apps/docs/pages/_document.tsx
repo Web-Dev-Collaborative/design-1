@@ -7,7 +7,6 @@ import NextDocument, {
   Main,
   NextScript,
 } from 'next/document'
-import React from 'react'
 import {ServerStyleSheet} from 'styled-components'
 import {basePath, ga} from '$config'
 

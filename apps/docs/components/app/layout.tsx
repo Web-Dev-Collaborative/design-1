@@ -1,7 +1,6 @@
 import {ArrowRightIcon, Icon} from '@sanity/icons'
 import {Card, Flex, Text} from '@sanity/ui'
 import Link from 'next/link'
-import React from 'react'
 import {AppFooter} from './footer'
 import {useApp} from './hooks'
 import {AppNavbar} from './navbar'

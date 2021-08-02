@@ -1,6 +1,6 @@
 import {CalendarIcon} from '@sanity/icons'
 import {Box, Button, Flex, Inline, Popover, Text, useClickOutside} from '@sanity/ui'
-import React, {useCallback, useState} from 'react'
+import {useCallback, useState} from 'react'
 
 export default function RightAlignedStory() {
   const [open, setOpen] = useState(false)

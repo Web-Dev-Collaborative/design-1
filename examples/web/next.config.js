@@ -20,6 +20,8 @@ module.exports = {
       '@sanity/logos': path.join(ROOT_PATH, 'packages/@sanity/logos/src'),
       '@sanity/ui': path.join(ROOT_PATH, 'packages/@sanity/ui/src'),
 
+      'react/jsx-dev-runtime': require.resolve('react/jsx-dev-runtime'),
+      'react/jsx-runtime': require.resolve('react/jsx-runtime'),
       react: require.resolve('react'),
       'react-dom': require.resolve('react-dom'),
       'styled-components': require.resolve('styled-components'),

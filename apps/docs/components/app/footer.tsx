@@ -1,7 +1,6 @@
 import {SanityLogo} from '@sanity/logos'
 import {Button, Card, Inline, Text} from '@sanity/ui'
 import Link from 'next/link'
-import React from 'react'
 import {useApp} from './hooks'
 
 export function AppFooter() {

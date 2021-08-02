@@ -30,6 +30,6 @@
       "@sanity/ui": ["../../packages/@sanity/ui/src"]
     }
   },
-  "exclude": ["./node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "./next-env.d.ts", "./typings"]
+  "include": ["**/*.ts", "**/*.tsx", "./next-env.d.ts", "./typings"],
+  "exclude": ["./node_modules"]
 }

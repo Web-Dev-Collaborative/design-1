@@ -10,6 +10,7 @@ const common = {
   parser: 'babel-eslint',
   plugins: ['import', 'jsx-a11y', 'react', 'react-hooks', 'prettier'],
   rules: {
+    'react/react-in-jsx-scope': 0,
     'import/order': [
       'error',
       {

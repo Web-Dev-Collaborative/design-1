@@ -43,7 +43,7 @@ async function readIcon(filePath: string) {
   const unformattedCode = [
     GENERATED_BANNER,
     svgrJsx
-      .replace('* as React', 'React, {forwardRef}')
+      .replace('* as React', '{forwardRef}')
       .replace(
         `function ${componentName}(props: React.SVGProps<SVGSVGElement>, svgRef?: React.Ref<SVGSVGElement>) {`,
         `/**\n * @public\n */\nexport const ${componentName} = forwardRef(function ${componentName}(props: React.SVGProps<SVGSVGElement>, ref: React.Ref<SVGSVGElement>) {`

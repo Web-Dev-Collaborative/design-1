@@ -1,5 +1,5 @@
 import {Workshop, WorkshopLocation} from '@sanity/ui-workshop'
-import React, {useCallback, useMemo} from 'react'
+import {useCallback, useMemo} from 'react'
 import ReactDOM from 'react-dom'
 import Refractor from 'react-refractor'
 import javascript from 'refractor/lang/javascript'

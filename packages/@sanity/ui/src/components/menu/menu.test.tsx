@@ -1,4 +1,3 @@
-import React from 'react'
 import {render} from '../../../test'
 import {MenuContext, MenuContextValue} from './menuContext'
 import {useMenu} from './useMenu'

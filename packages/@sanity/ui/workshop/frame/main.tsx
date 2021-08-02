@@ -1,5 +1,4 @@
 import {WorkshopFrame} from '@sanity/ui-workshop'
-import React from 'react'
 import ReactDOM from 'react-dom'
 import Refractor from 'react-refractor'
 import javascript from 'refractor/lang/javascript'

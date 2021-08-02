@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react'
+import {useCallback, useEffect, useMemo, useRef, useState} from 'react'
 import {Stack} from '../../primitives'
 import {_findNextItemElement, _findPrevItemElement, _focusItemElement} from './helpers'
 import {TreeContext} from './treeContext'

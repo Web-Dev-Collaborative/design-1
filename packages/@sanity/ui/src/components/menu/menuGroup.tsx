@@ -1,5 +1,5 @@
 import {ChevronRightIcon} from '@sanity/icons'
-import React, {useCallback, useEffect, useRef, useState} from 'react'
+import {useCallback, useEffect, useRef, useState} from 'react'
 import styled from 'styled-components'
 import {Box, Popover, PopoverProps, Text} from '../../primitives'
 import {SelectableTone} from '../../types/selectable'

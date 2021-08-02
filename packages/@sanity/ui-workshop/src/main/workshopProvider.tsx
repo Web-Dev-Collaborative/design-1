@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import {useMemo} from 'react'
 import {resolveLocation} from '../resolveLocation'
 import {ScopeProvider} from '../scopeProvider'
 import {PropSchema, StoryProp, WorkshopLocation, WorkshopScope} from '../types'

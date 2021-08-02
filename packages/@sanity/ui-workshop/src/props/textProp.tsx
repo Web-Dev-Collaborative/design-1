@@ -1,5 +1,4 @@
 import {Box, Text, TextArea} from '@sanity/ui'
-import React from 'react'
 import {TextPropSchema} from '../types'
 import {useScope} from '../useScope'
 

@@ -1,6 +1,5 @@
 import {Autocomplete, Box, Stack, Text} from '@sanity/ui'
 import {useBoolean, useSelect, useText} from '@sanity/ui-workshop'
-import React from 'react'
 import {
   WORKSHOP_RADIUS_OPTIONS,
   WORKSHOP_SPACE_OPTIONS,

@@ -11,7 +11,7 @@ import {
   Switch,
   Text,
 } from '@sanity/ui'
-import React, {useCallback} from 'react'
+import {useCallback} from 'react'
 import {useWorkshop} from '../useWorkshop'
 import {VIEWPORT_OPTIONS, ZOOM_OPTIONS} from './constants'
 

@@ -1,7 +1,7 @@
 import {ErrorOutlineIcon, ToggleArrowRightIcon, WarningOutlineIcon} from '@sanity/icons'
 import {Box, Card, CardTone, Code, Flex, Stack, Text} from '@sanity/ui'
 import axe, {AxeResults} from 'axe-core'
-import React, {createElement, useCallback, useState} from 'react'
+import {createElement, useCallback, useState} from 'react'
 
 function Details(props: {children?: React.ReactNode; summary?: React.ReactNode; tone?: CardTone}) {
   const {children, summary, tone} = props

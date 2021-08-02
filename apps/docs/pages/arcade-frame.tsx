@@ -16,7 +16,7 @@ export default function ArcadeFrame() {
   const [windowError, setWindowError] = useState<Error | null>(null)
 
   useEffect(() => {
-    parent.postMessage({type: 'arcadeFrame/ready'}, location.origin)
+    parent?.postMessage({type: 'arcadeFrame/ready'}, location.origin)
 
     const handleMessage = (event: MessageEvent) => {
       const msg = event.data

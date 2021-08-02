@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
 } from '@sanity/ui'
-import React, {useCallback, useState} from 'react'
+import {useCallback, useState} from 'react'
 import countries from '../__fixtures__/countries'
 import {ExampleOption} from './types'
 

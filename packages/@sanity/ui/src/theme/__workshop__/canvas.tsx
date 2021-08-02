@@ -18,7 +18,7 @@ import {
   useRootTheme,
 } from '@sanity/ui'
 import {useBoolean} from '@sanity/ui-workshop'
-import React, {createContext, useContext} from 'react'
+import {createContext, useContext} from 'react'
 import {
   ThemeColorMuted,
   ThemeColorMutedTone,

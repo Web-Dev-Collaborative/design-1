@@ -1,6 +1,6 @@
 import {Autocomplete, Box, Button, Card, Code, Stack, Text} from '@sanity/ui'
 import {useBoolean, useSelect} from '@sanity/ui-workshop'
-import React, {useCallback, useState} from 'react'
+import {useCallback, useState} from 'react'
 import {WORKSHOP_RADIUS_OPTIONS, WORKSHOP_TEXT_SIZE_OPTIONS} from '../../../__workshop__/constants'
 import countries from '../__fixtures__/countries'
 import {ExampleOption} from './types'

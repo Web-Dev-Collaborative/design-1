@@ -1,4 +1,4 @@
-import React, {cloneElement, forwardRef, useCallback, useMemo, useState} from 'react'
+import {cloneElement, forwardRef, useCallback, useMemo, useState} from 'react'
 import {isElement} from 'react-is'
 import {Popover, PopoverProps} from '../../primitives'
 import {ThemeColorSchemeKey} from '../../theme'

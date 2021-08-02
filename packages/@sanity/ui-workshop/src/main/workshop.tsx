@@ -7,7 +7,7 @@ import {
   usePrefersDark,
 } from '@sanity/ui'
 import {AxeResults} from 'axe-core'
-import React, {useCallback, useEffect, useMemo, useReducer, useState} from 'react'
+import {useCallback, useEffect, useMemo, useReducer, useState} from 'react'
 import {propsReducer} from '../props/reducer'
 import {PropSchema, WorkshopLocation, WorkshopScope} from '../types'
 import {useFrame} from './useFrame'

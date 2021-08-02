@@ -1,4 +1,4 @@
-import React, {cloneElement, forwardRef, useCallback, useState} from 'react'
+import {cloneElement, forwardRef, useCallback, useState} from 'react'
 import {Inline, InlineProps} from '../../primitives'
 
 /**

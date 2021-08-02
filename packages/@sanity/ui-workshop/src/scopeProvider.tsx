@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import {useMemo} from 'react'
 import {ScopeContext} from './scopeContext'
 import {PropSchema, ScopeContextValue, StoryProp, WorkshopScope, WorkshopStory} from './types'
 

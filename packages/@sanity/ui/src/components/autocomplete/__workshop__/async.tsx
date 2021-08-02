@@ -10,7 +10,7 @@ import {
   Stack,
   Text,
 } from '@sanity/ui'
-import React, {useCallback, useEffect, useRef, useState} from 'react'
+import {useCallback, useEffect, useRef, useState} from 'react'
 import countries from '../__fixtures__/countries'
 
 export default function AsyncStory() {

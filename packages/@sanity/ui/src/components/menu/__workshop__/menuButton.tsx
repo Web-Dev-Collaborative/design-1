@@ -1,7 +1,6 @@
 import {ClockIcon, CommentIcon, ExpandIcon, SearchIcon} from '@sanity/icons'
 import {Box, Button, Grid, LayerProvider, Menu, MenuButton, MenuDivider, MenuItem} from '@sanity/ui'
 import {useAction, useBoolean} from '@sanity/ui-workshop'
-import React from 'react'
 
 export default function MenuButtonStory() {
   const portal = useBoolean('Portal', false, 'Props')

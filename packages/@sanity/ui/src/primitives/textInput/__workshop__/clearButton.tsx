@@ -1,5 +1,5 @@
 import {TextInput} from '@sanity/ui'
-import React, {useCallback, useState} from 'react'
+import {useCallback, useState} from 'react'
 
 export default function ClearButtonStory() {
   const [value, setValue] = useState('')

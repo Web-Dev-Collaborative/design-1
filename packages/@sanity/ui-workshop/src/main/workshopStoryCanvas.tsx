@@ -1,5 +1,5 @@
 import {Card, Container, Flex, Spinner} from '@sanity/ui'
-import React, {useRef} from 'react'
+import {useRef} from 'react'
 import styled from 'styled-components'
 import {useWorkshop} from '../useWorkshop'
 

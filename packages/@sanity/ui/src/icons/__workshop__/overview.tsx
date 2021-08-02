@@ -1,6 +1,5 @@
 import {Icon, icons, IconSymbol} from '@sanity/icons'
 import {Box, Card, Code, Grid, Heading, Stack} from '@sanity/ui'
-import React from 'react'
 
 export default function OverviewStory() {
   return (

@@ -1,13 +1,5 @@
 import {ChevronDownIcon} from '@sanity/icons'
-import React, {
-  cloneElement,
-  forwardRef,
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react'
+import {cloneElement, forwardRef, useCallback, useEffect, useMemo, useRef, useState} from 'react'
 import styled from 'styled-components'
 import {EMPTY_ARRAY} from '../../constants'
 import {focusFirstDescendant} from '../../helpers'

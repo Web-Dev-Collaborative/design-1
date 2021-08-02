@@ -1,6 +1,6 @@
 import {Card, Layer, Tab, TabList, TabPanel} from '@sanity/ui'
 import {AxeResults} from 'axe-core'
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {Prop} from '../../props'
 import {useScope} from '../../useScope'
 import {InspectAxeResults} from './inspectAxeResults'

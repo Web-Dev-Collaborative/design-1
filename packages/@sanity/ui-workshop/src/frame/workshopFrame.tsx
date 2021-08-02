@@ -7,15 +7,7 @@ import {
   ThemeProvider,
   ToastProvider,
 } from '@sanity/ui'
-import React, {
-  createElement,
-  Suspense,
-  useCallback,
-  useEffect,
-  useMemo,
-  useReducer,
-  useState,
-} from 'react'
+import {createElement, Suspense, useCallback, useEffect, useMemo, useReducer, useState} from 'react'
 import {useAxeResults} from '../axe/useAxeResults'
 import {isRecord} from '../lib/isRecord'
 import {qs} from '../lib/qs'

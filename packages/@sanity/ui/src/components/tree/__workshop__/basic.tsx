@@ -1,6 +1,5 @@
 import {LinkIcon} from '@sanity/icons'
 import {Box, Tree, TreeItem} from '@sanity/ui'
-import React from 'react'
 
 export default function BasicStory() {
   return (

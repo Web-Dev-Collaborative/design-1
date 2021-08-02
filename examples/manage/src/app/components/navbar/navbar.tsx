@@ -12,7 +12,7 @@ import {
   Switch,
   Text,
 } from '@sanity/ui'
-import React from 'react'
+
 import {useLocation} from '../../../lib/location'
 import {useApp} from '../../hooks'
 import {Search} from './search'

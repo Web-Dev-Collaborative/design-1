@@ -13,7 +13,7 @@
     "composite": true,
     "rootDir": "../../../",
     "outDir": "./lib/dts/",
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "references": [{"path": "../color/tsconfig.lib.json"}, {"path": "../icons/tsconfig.lib.json"}]
 }

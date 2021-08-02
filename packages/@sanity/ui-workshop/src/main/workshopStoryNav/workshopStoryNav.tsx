@@ -1,5 +1,5 @@
 import {Box, Card, Tree, TreeItem} from '@sanity/ui'
-import React, {useCallback, useMemo} from 'react'
+import {useCallback, useMemo} from 'react'
 import {useWorkshop} from '../../useWorkshop'
 import {buildMenu} from './helpers'
 import {MenuCollection, MenuList, MenuScope} from './types'

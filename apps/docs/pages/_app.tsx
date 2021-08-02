@@ -1,6 +1,5 @@
 import {AppProps} from 'next/app'
 import Head from 'next/head'
-import React from 'react'
 import Refractor from 'react-refractor'
 import bash from 'refractor/lang/bash'
 import javascript from 'refractor/lang/javascript'

@@ -8,7 +8,7 @@ import {
   Text,
   // VariantProvider
 } from '@sanity/ui'
-import React from 'react'
+
 import styled from 'styled-components'
 import {OrganizationTabs} from './tabs'
 

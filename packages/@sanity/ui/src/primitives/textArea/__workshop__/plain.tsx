@@ -1,6 +1,5 @@
 import {Container, Flex, Stack, Text, TextArea} from '@sanity/ui'
 import {useBoolean, useSelect, useText} from '@sanity/ui-workshop'
-import React from 'react'
 import {
   WORKSHOP_FONT_WEIGHT_OPTIONS,
   WORKSHOP_RADIUS_OPTIONS,

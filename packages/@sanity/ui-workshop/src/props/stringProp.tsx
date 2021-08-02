@@ -1,5 +1,4 @@
 import {Box, Text, TextInput} from '@sanity/ui'
-import React from 'react'
 import {StringPropSchema} from '../types'
 import {useScope} from '../useScope'
 

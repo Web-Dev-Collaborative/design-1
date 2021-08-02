@@ -4,7 +4,7 @@ import {
   RenderOptions as TLRenderOptions,
   RenderResult,
 } from '@testing-library/react'
-import React from 'react'
+import {Fragment, StrictMode} from 'react'
 import {Card} from '../src/primitives/card'
 import {studioTheme, ThemeProvider} from '../src/theme'
 
@@ -25,7 +25,7 @@ export function render(
     strict = false,
     wrapper: InnerWrapper = DefaultWrapper,
   } = options
-  const Mode = strict ? React.StrictMode : React.Fragment
+  const Mode = strict ? StrictMode : Fragment
 
   const Wrapper: React.FC = ({children}: any) => {
     return (
